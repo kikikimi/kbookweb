@@ -2,6 +2,7 @@ package autoweb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.NumberFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
+import java.util.Locale;
+
 import client.CarModelOptionsIO;
 import automobile.Model;
 /**
@@ -66,7 +69,7 @@ public class ConfigAuto extends HttpServlet {
 					if (modelNames.get(i).equals(modelnm))
 						selected = "SELECTED";
 					else selected = "";
-					writer.println("<OPTION VALUE='" + modelNames.get(i) + " " + selected +"'>" +
+					writer.println("<OPTION VALUE='" + modelNames.get(i) + "' " + selected +">" +
 							modelNames.get(i) + "</OPTION>");
 				}
 			}
@@ -79,7 +82,8 @@ public class ConfigAuto extends HttpServlet {
 				for (int j = 0; j < configModel.getOptionCount(i); j++) {
 					writer.print("<OPTION VALUE='" + configModel.getOptionValue(i, j) + "'>");
 					writer.print(configModel.getOptionValue(i, j) + " - " 
-							+ configModel.getOptionPrice(i, j));
+							+ NumberFormat.getCurrencyInstance(new Locale("en", "US"))
+                            .format(configModel.getOptionPrice(i, j)));
 					writer.println("</OPTION>");
 				}
 				writer.println("</TD></TR>");	
