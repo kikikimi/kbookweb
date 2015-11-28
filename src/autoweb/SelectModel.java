@@ -54,7 +54,7 @@ public class SelectModel extends HttpServlet {
 						modelNames.get(i) + "</OPTION>");
 			}
 			writer.println("</SELECT></TD></TR>");
-			writer.println("<TR><TD COLSPAN=2> <INPUT TYPE='SUBMIT' VALUE='Next' ALIGN ='MIDDLE' />");
+			writer.println("<TR><TD COLSPAN=2> <INPUT TYPE='SUBMIT' VALUE='Next' STYLE='float:right;' />");
 			writer.println("</TD></TR></TABLE>");
 			writer.println("</FORM>");
 			writer.println("</BODY></HTML>");

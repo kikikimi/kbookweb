@@ -3,13 +3,9 @@ package autoweb;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.NumberFormat;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import javax.servlet.http.*;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -51,6 +47,7 @@ public class ConfigAuto extends HttpServlet {
 		configModel = carClient.getModelOptions(modelnm);
 		carClient.sendCmd("QUIT");
 		carClient.closeSession();
+		session.setAttribute("car", configModel);
 	}
 	private void writePage(HttpServletResponse response, String modelnm) {
 		try{
@@ -61,9 +58,16 @@ public class ConfigAuto extends HttpServlet {
 			writer.println("<TITLE>"+ modelnm + " Configuration</TITLE>");
 			writer.println("</HEAD>");
 			writer.println("<BODY>");
+			writer.println("Select options for your car");
+			writer.println("<FORM NAME='formA' ACTION='ConfigAuto'>");
+			writer.println("<INPUT TYPE='hidden' NAME='modelnm' value=''>");
+			writer.println("</INPUT></FORM>");
+			writer.println("<FORM NAME='formB' ACTION='carOptions.jsp'>");
 			writer.println("<TABLE BORDER='1px'>");
 			writer.println("<TR> <TD> Model: </TD>");
-			writer.println("<TD><SELECT NAME='modelnm' ONCHANGE= 'ConfigAuto'>");
+			writer.println("<TD><SELECT NAME='modeldrpdwn' "
+					+ "ONCHANGE=\" document.formA.modelnm.value = document.formB.modeldrpdwn.value;"
+					+ "document.formA.submit()\">");
 			if (modelNames != null) {
 				for (int i = 0; i < modelNames.size(); i++){
 					if (modelNames.get(i).equals(modelnm))
@@ -74,8 +78,6 @@ public class ConfigAuto extends HttpServlet {
 				}
 			}
 			writer.println("</SELECT></TD></TR>");
-			writer.println("<FORM ACTION='ConfigAuto'>");
-			writer.println("<TABLE BORDER='1px'>");
 			for (int i = 0; i < configModel.getOptionSetSize(); i++) {
 				writer.println("<TR><TD>" +configModel.getOptionSetName(i) + "</TD>");
 				writer.println("<TD><SELECT NAME ='" + configModel.getOptionSetName(i) +"'>");
@@ -88,6 +90,7 @@ public class ConfigAuto extends HttpServlet {
 				}
 				writer.println("</TD></TR>");	
 			}
+			writer.println("<TR><TD COLSPAN=2> <INPUT TYPE='SUBMIT' VALUE='Next' STYLE='float:right;' />");
 			writer.println("</TABLE>");
 			writer.println("</FORM>");
 			writer.println("</BODY></HTML>");
