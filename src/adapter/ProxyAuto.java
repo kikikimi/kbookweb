@@ -87,11 +87,15 @@ public abstract class ProxyAuto {
 		modelList.addAll(_autoModelGroup.keySet());
 		return modelList;
 	}
-	public void sendAuto (ObjectOutputStream objectOut, String modelName) { //gets an automobile before sending it over an ObjectOutputStream
+	public Model getAuto (String modelName) {
 		_autoModel = _autoModelGroup.get(modelName);
 		if (_autoModel == null) { 
 			System.err.println("Model not found! Model: " + modelName);
 		}
+		return _autoModel;
+	}
+	public void sendAuto (ObjectOutputStream objectOut, String modelName) { //gets an automobile before sending it over an ObjectOutputStream
+		getAuto (modelName);
 		try {
 			objectOut.writeObject(_autoModel);
 			objectOut.flush();
@@ -99,7 +103,6 @@ public abstract class ProxyAuto {
 		catch (IOException e) {
 		  e.printStackTrace();
 		}
-		
 	}
 	public ArrayList<String> getOptionSetNames (String modelName)
 	{
@@ -178,5 +181,8 @@ public abstract class ProxyAuto {
 	}
 	public void loadLocalAutos () {
 		System.err.println ("Please use addAuto when adding autos in this Class.");
+	}
+	public int countAutos (){
+		return _autoModelGroup.size();
 	}
 }
