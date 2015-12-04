@@ -16,7 +16,7 @@ public abstract class ProxyAuto {
 	private Model _autoModel;
 	private static LinkedHashMap <String, Model> _autoModelGroup = new LinkedHashMap <String, Model> ();
 	
-	public void buildAuto(String fileName, String fileType) { 
+	public Model buildAuto(String fileName, String fileType) { 
 		FileIO builder = new FileIO ();
 		_autoModel = new Model ();
 			if (fileType.indexOf("prop") > -1) {
@@ -46,6 +46,7 @@ public abstract class ProxyAuto {
 				_autoModel.setDefaultOptionChoices();
 				addAuto(_autoModel);
 			}
+			return _autoModel;
 	}
 	public boolean buildAuto(Properties autoProp) {
 		FileIO builder = new FileIO ();

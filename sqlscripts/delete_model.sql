@@ -1,0 +1,1 @@
+delete from model where ModelName = "";

@@ -4,9 +4,10 @@
  */
 package adapter;
 import java.util.*;
+import automobile.Model;
 
 public interface CanCreateModel {
-	public void buildAuto(String fileName, String fileType);
+	public Model buildAuto(String fileName, String fileType);
 	public boolean buildAuto(Properties autoProp);
 	public void printAuto(String modelName);
 	public void removeAuto(String modelName);

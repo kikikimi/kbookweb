@@ -1,20 +1,26 @@
 This is Kimberly Disher's Lab6. 
 
 Output files - 
-?
+DB_test_output.txt
  
 Input files -
-Used when starting a Server:
+Used when starting a Server or database demonstration:
 automobile.txt (config for a auto Model). 
 automobile2.txt (different config for an auto Model).
+automobile3.txt (different config for an auto Model).
+automobile4.txt(different config for an auto Model).
+./sqlscripts/createTables.sql (used for setting up for tables for database operation)
+
 
 Added for Lab 6
 Lab 6 adds servlets and a .jsp file for user interaction in a browser.
-SelectModel presents a drop-down list of car models from the server.
-ConfigAuto has a user select option choices via a drop-down for each option set.
-carOptions.jsp displays selected options, prices, and a total cost.
-autoassist.ConfigHelper adds the user's choices to a Model instance for carOptions.jsp.
-
+	SelectModel presents a drop-down list of car models from the server.
+	ConfigAuto has a user select option choices via a drop-down for each option set.
+	carOptions.jsp displays selected options, prices, and a total cost.
+	autoassist.ConfigHelper adds the user's choices to a Model instance for carOptions.jsp.
+DB operations (including table creation from DBCreation) are in the dbmanagement package.	
+	Model insertions, updates, deletes, and selects (reading Models from tables) are handled by DBUpkeep.
+	DBBaseOpts, the parent class of the above 2 classes has methods to set up and close the connection.
 
 Updates for Lab 6
 CarModelOptionsIO - the "client" now has more atomized operations, such as getModels() and getModelOptions().
@@ -22,7 +28,9 @@ CarModelOptionsIO - the "client" now has more atomized operations, such as getMo
  ModelServer still runs independently on server-side. The servlets call on the client, CarModelOptionsIO.
 
 
-The design diagram is Lab6Diagram.jpg
+The design diagram is Lab6+DBclasses_Diagram.jpg
+The database entity relationship diagram is in AutoERD.png
+The database test app is test.DbDriver.
 
 ---------
 Main changes from Lab 5 - adds client/server capabilities in new packages "client" and "server."

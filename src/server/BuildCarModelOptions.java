@@ -7,7 +7,6 @@ package server;
 import java.util.ArrayList;
 import java.util.Properties;
 import java.io.*;
-import java.util.*;
 
 import adapter.ModelBuilder;
 
@@ -38,6 +37,7 @@ public class BuildCarModelOptions implements AutoServer {
 		}
 		_carBuilder.buildAuto("automobile.txt", "Text");	//this buildAuto calls addAuto, which only adds a Model if 
 		_carBuilder.buildAuto("automobile2.txt", "Text");	// the Model name does not already exist in the LinkedHashMap
+		_carBuilder.buildAuto("automobile3.txt", "Text");
 	}
 	public void sendAuto(ObjectOutputStream objectOut, String modelName) {
 		if (_carBuilder == null) { //make sure we have an instance, and don't just waste memory creating new ones

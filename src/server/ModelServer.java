@@ -14,7 +14,7 @@ public class ModelServer extends Thread implements client.SocketClientConstants,
 	private ServerSocket svrSock;
 	private Socket insock;
 	private ObjectInputStream objectIn;
-	AutoServer autoserver = new BuildCarModelOptions();
+	protected AutoServer autoserver = new BuildCarModelOptions();
 	
 	private static int SVRPORT = 2092; 
 	

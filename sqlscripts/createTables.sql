@@ -1,0 +1,3 @@
+create table model (BasePrice DECIMAL(12,2) not null,  Make VARCHAR(100) not null, ModelName VARCHAR (255) not null, ModelID int not null auto_increment primary key, CONSTRAINT uc_MakeModel UNIQUE (ModelName, Make));
+create table optionset (OptionSetID int not null auto_increment, OptionName varchar (100) not null, ModelID int not null, primary key (OptionSetID), constraint fk_ModOptSet foreign key (ModelID) references Model(ModelID));
+create table opts (OptionID int not null auto_increment, OptionPrice decimal(9, 2) not null, OptionValue varchar(150) not null, OptionSetID int not null, Primary key (OptionID), constraint fk_OpSetOpt foreign key (OptionSetID) references optionset(OptionSetID));

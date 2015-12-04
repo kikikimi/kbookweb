@@ -1,0 +1,205 @@
+Trying to create tables
+Trying to load /Users/kimi/Documents/workspace/CIS35BWeb/kbookweb/sqlscripts/createTables.sql
+Trying to load /Users/kimi/Documents/workspace/CIS35BWeb/kbookweb/automobile.txt
+Trying to load /Users/kimi/Documents/workspace/CIS35BWeb/kbookweb/automobile2.txt
+Trying to load /Users/kimi/Documents/workspace/CIS35BWeb/kbookweb/automobile3.txt
+Trying to load /Users/kimi/Documents/workspace/CIS35BWeb/kbookweb/automobile4.txt
+ Ford Focus Wagon ZTW Base Price: $15,999.00
+    Color
+    X   Fort Knox Gold Clearcoat Metallic, Price: $0.00
+        Liquid Grey Clearcoat Metallic, Price: $0.00
+        Infra-Red Clearcoat, Price: $0.00
+        Grabber Green Clearcoat Metallic, Price: $0.00
+        Sangria Red Clearcoat Metallic, Price: $0.00
+        French Blue Clearcoat Metallic, Price: $0.00
+        Twilight Blue Clearcoat Metallic, Price: $0.00
+        CD Silver Clearcoat Metallic, Price: $0.00
+        Pitch Black Clearcoat, Price: $0.00
+        Cloud 9 White Clearcoat, Price: $0.00
+    Transmission
+    X   Automatic, Price: $0.00
+        Standard, Price: ($815.00)
+    Brakes/Traction Control
+    X   Standard, Price: $0.00
+        ABS, Price: $400.00
+        ABS with Advance Trac, Price: $1,625.00
+    Side Impact Air Bags
+    X   None, Price: $0.00
+        Select, Price: $350.00
+    Power Moonroof
+    X   None, Price: $0.00
+        Select, Price: $595.00
+
+Price with selected options(may be defaults):15999.0
+
+ Ford Focus Sedan Base Price: $17,999.00
+    Color
+    X   Fort Knox Gold Clearcoat Metallic, Price: $0.00
+        Liquid Grey Clearcoat Metallic, Price: $0.00
+        Infra-Red Clearcoat, Price: $0.00
+        Grabber Green Clearcoat Metallic, Price: $0.00
+        Sangria Red Clearcoat Metallic, Price: $0.00
+        French Blue Clearcoat Metallic, Price: $0.00
+        Twilight Blue Clearcoat Metallic, Price: $0.00
+        CD Silver Clearcoat Metallic, Price: $0.00
+        Pitch Black Clearcoat, Price: $0.00
+        Cloud 9 White Clearcoat, Price: $0.00
+    Transmission
+    X   Automatic, Price: $0.00
+        Standard, Price: ($815.00)
+    Brakes/Traction Control
+    X   Standard, Price: $0.00
+        ABS, Price: $400.00
+        ABS with Advance Trac, Price: $1,625.00
+    Side Impact Air Bags
+    X   None, Price: $0.00
+        Select, Price: $350.00
+    Power Moonroof
+    X   None, Price: $0.00
+        Select, Price: $595.00
+
+Price with selected options(may be defaults):17999.0
+
+ Ford Avenger Wagon Base Price: $13,595.00
+    Color
+    X   Fort Knox Gold Clearcoat Metallic, Price: $0.00
+        Liquid Grey Clearcoat Metallic, Price: $0.00
+        Infra-Red Clearcoat, Price: $0.00
+        Grabber Green Clearcoat Metallic, Price: $0.00
+        Sangria Red Clearcoat Metallic, Price: $0.00
+        French Blue Clearcoat Metallic, Price: $0.00
+        Twilight Blue Clearcoat Metallic, Price: $0.00
+        CD Silver Clearcoat Metallic, Price: $0.00
+        Pitch Black Clearcoat, Price: $0.00
+        Cloud 9 White Clearcoat, Price: $0.00
+    Transmission
+    X   Automatic, Price: $500.00
+        Standard, Price: ($815.00)
+    Brakes/Traction Control
+    X   Standard, Price: $0.00
+        ABS, Price: $400.00
+        ABS with Advance Trac, Price: $1,625.00
+    Side Impact Air Bags
+    X   None, Price: $0.00
+        Select, Price: $350.00
+    Power Moonroof
+    X   None, Price: $0.00
+        Select, Price: $595.00
+
+Price with selected options(may be defaults):14095.0
+
+ Ford Taurus Base Price: $19,595.00
+    Color
+    X   Fort Knox Gold Clearcoat Metallic, Price: $0.00
+        Liquid Grey Clearcoat Metallic, Price: $0.00
+        Infra-Red Clearcoat, Price: $0.00
+        Grabber Green Clearcoat Metallic, Price: $0.00
+        Sangria Red Clearcoat Metallic, Price: $0.00
+        French Blue Clearcoat Metallic, Price: $0.00
+        Twilight Blue Clearcoat Metallic, Price: $0.00
+        CD Silver Clearcoat Metallic, Price: $0.00
+        Pitch Black Clearcoat, Price: $0.00
+        Cloud 9 White Clearcoat, Price: $0.00
+    Transmission
+    X   Automatic, Price: $500.00
+        Standard, Price: ($815.00)
+    Brakes/Traction Control
+    X   Standard, Price: $0.00
+        ABS, Price: $400.00
+        ABS with Advance Trac, Price: $1,825.00
+    Side Impact Air Bags
+    X   None, Price: $0.00
+        Select, Price: $350.00
+    Power Moonroof
+    X   None, Price: $0.00
+        Select, Price: $695.00
+
+Price with selected options(may be defaults):20095.0
+
+Removed from DB and LHM: Ford Taurus
+Changed the price of Automatic Transmission in Ford Avenger Wagon
+
+ Ford Focus Wagon ZTW Base Price: $15,999.00
+    Color
+    X   Fort Knox Gold Clearcoat Metallic, Price: $0.00
+        Liquid Grey Clearcoat Metallic, Price: $0.00
+        Infra-Red Clearcoat, Price: $0.00
+        Grabber Green Clearcoat Metallic, Price: $0.00
+        Sangria Red Clearcoat Metallic, Price: $0.00
+        French Blue Clearcoat Metallic, Price: $0.00
+        Twilight Blue Clearcoat Metallic, Price: $0.00
+        CD Silver Clearcoat Metallic, Price: $0.00
+        Pitch Black Clearcoat, Price: $0.00
+        Cloud 9 White Clearcoat, Price: $0.00
+    Transmission
+    X   Automatic, Price: $0.00
+        Standard, Price: ($815.00)
+    Brakes/Traction Control
+    X   Standard, Price: $0.00
+        ABS, Price: $400.00
+        ABS with Advance Trac, Price: $1,625.00
+    Side Impact Air Bags
+    X   None, Price: $0.00
+        Select, Price: $350.00
+    Power Moonroof
+    X   None, Price: $0.00
+        Select, Price: $595.00
+
+Price with selected options(may be defaults):15999.0
+
+ Ford Focus Sedan Base Price: $17,999.00
+    Color
+    X   Fort Knox Gold Clearcoat Metallic, Price: $0.00
+        Liquid Grey Clearcoat Metallic, Price: $0.00
+        Infra-Red Clearcoat, Price: $0.00
+        Grabber Green Clearcoat Metallic, Price: $0.00
+        Sangria Red Clearcoat Metallic, Price: $0.00
+        French Blue Clearcoat Metallic, Price: $0.00
+        Twilight Blue Clearcoat Metallic, Price: $0.00
+        CD Silver Clearcoat Metallic, Price: $0.00
+        Pitch Black Clearcoat, Price: $0.00
+        Cloud 9 White Clearcoat, Price: $0.00
+    Transmission
+    X   Automatic, Price: $0.00
+        Standard, Price: ($815.00)
+    Brakes/Traction Control
+    X   Standard, Price: $0.00
+        ABS, Price: $400.00
+        ABS with Advance Trac, Price: $1,625.00
+    Side Impact Air Bags
+    X   None, Price: $0.00
+        Select, Price: $350.00
+    Power Moonroof
+    X   None, Price: $0.00
+        Select, Price: $595.00
+
+Price with selected options(may be defaults):17999.0
+
+ Ford Avenger Wagon Base Price: $13,595.00
+    Color
+    X   Fort Knox Gold Clearcoat Metallic, Price: $0.00
+        Liquid Grey Clearcoat Metallic, Price: $0.00
+        Infra-Red Clearcoat, Price: $0.00
+        Grabber Green Clearcoat Metallic, Price: $0.00
+        Sangria Red Clearcoat Metallic, Price: $0.00
+        French Blue Clearcoat Metallic, Price: $0.00
+        Twilight Blue Clearcoat Metallic, Price: $0.00
+        CD Silver Clearcoat Metallic, Price: $0.00
+        Pitch Black Clearcoat, Price: $0.00
+        Cloud 9 White Clearcoat, Price: $0.00
+    Transmission
+    X   Automatic, Price: $1.00
+        Standard, Price: ($815.00)
+    Brakes/Traction Control
+    X   Standard, Price: $0.00
+        ABS, Price: $400.00
+        ABS with Advance Trac, Price: $1,625.00
+    Side Impact Air Bags
+    X   None, Price: $0.00
+        Select, Price: $350.00
+    Power Moonroof
+    X   None, Price: $0.00
+        Select, Price: $595.00
+
+Price with selected options(may be defaults):13596.0
+

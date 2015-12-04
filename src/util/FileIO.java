@@ -262,4 +262,34 @@ public class FileIO {
 		}
 		return extMatch;
 	}
+	public static String [] readLines (String fileName) {
+		boolean endFile = false;
+		String line = "";
+		ArrayList<String> lines = new ArrayList<String>();
+		File fileCheck = new File (fileName);
+		System.out.println("Trying to load " + fileCheck.getAbsolutePath());
+		if (!fileCheck.exists()) {
+			System.err.println("File not found: " + fileName);
+		}
+		
+		try {
+			FileReader fReader = new FileReader(fileName);
+			BufferedReader bReader = new BufferedReader(fReader);
+			
+			while (!endFile)
+			{
+				line = bReader.readLine();
+				if (line == null) 
+					endFile = true;
+				else 
+					lines.add(line);
+			}
+			bReader.close();
+			fReader.close();
+		}
+		catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+		return lines.toArray(new String [lines.size()]);
+	}
 }
