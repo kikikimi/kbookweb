@@ -2,6 +2,7 @@ This is Kimberly Disher's Lab6.
 
 Output files - 
 DB_test_output.txt
+autoweb_screenshots.pdf (shots of the servlet and jsp output)
  
 Input files -
 Used when starting a Server or database demonstration:
@@ -10,6 +11,7 @@ automobile2.txt (different config for an auto Model).
 automobile3.txt (different config for an auto Model).
 automobile4.txt(different config for an auto Model).
 ./sqlscripts/createTables.sql (used for setting up for tables for database operation)
+There's a mysqldump of the project at dbrecreate.sql
 
 
 Added for Lab 6
